@@ -1,0 +1,85 @@
+h1{
+
+    text-shadow: 2px 2px rgb(0, 255, 221), 4px 4px #ff2a00, 6px 6px #0000ff;
+}
+/*GRADIENTE*/
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .animated-gradient {
+    background: linear-gradient(45deg, #49a09d, #5f2c82, #76f58d, #4e21e0);
+    background-size: 400% 400%;
+    animation: gradient-animation 20s ease infinite;
+  }
+/* div principal */
+.principal-div{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.pregunta{
+  position: absolute;
+  top: 8px; /* Coordenada Y */
+  left: 916px; /* Coordenada X */
+  width: 302px;
+  height: 144px;
+  background-color: #c4e17f;
+  border-radius: 10px;
+  border-color: black;
+}
+.entrada{
+  width: 260px; /* Ajusta el ancho al contenedor */
+  height: 32px; /* Altura del input */
+  padding: 10px; /* Espacio interno para hacerlo más cómodo al escribir */
+  font-size: 20px; /* Tamaño de la tipografía */
+  border: 1px solid #007BFF; /* Borde con color sólido */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+  outline: none; /* Elimina el borde de foco por defecto */
+}
+.entrada:focus{
+  border-color: #0056b3; /* Cambia el color del borde al enfocar */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.8); /* Sombra más notoria al enfocar */
+}
+.boton{
+  width: 90%; /* Ajusta el ancho al contenedor */
+  height: 50px; /* Altura del botón */
+  padding: 0 20px; /* Espacio horizontal para el contenido interno */
+  font-size: 20px; /* Tamaño de la tipografía */
+  color: white; /* Color del texto */
+  background-color: #007BFF; /* Color de fondo del botón */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  cursor: pointer; /* Cursor en forma de mano al pasar por encima */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves para efectos */
+  outline: none; /* Elimina el borde de foco por defecto */
+}
+.boton:hover, .boton:focus{
+  background-color: #0056b3; /* Oscurece el botón al pasar el mouse o enfocar */
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.8); /* Sombra más notoria */
+}
+.respuesta{
+  position: absolute;
+  top: 156px; /* Coordenada Y */
+  left: 923px; /* Coordenada X */
+  width: 297px;
+  height: 425px;
+  background-color: #c4e17f;
+  border-radius: 10px;
+  border-color: black;
+}
+.pag-principal{
+  position: absolute;
+  top: 542px; /* Coordenada Y */
+  left: 928px; /* Coordenada X */
+  width: 289px;
+  height: 41px;
+  background-color: #ff3232;
+  border-radius: 8px;
+  border-color: rgb(255, 103, 103);
+  font-size: 15px;
+}
